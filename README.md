@@ -29,7 +29,7 @@ along with Metagam.  If not, see <http://www.gnu.org/licenses/>.
 Устанавливаем необходимые из свежих репозиториев пакеты:
 ```bash
 apt update
-apt install nano mc screen libwww-perl mysql-client mysql-server nginx sudo
+apt install nano mc screen libwww-perl mysql-client mysql-server nginx sudo libev-perl
 ```
 Во время установки MySQL сервера будет предложено ввести пароль для root пользователя.
 Введите пароль и запишите его. Он понадобится в конечных стадиях установки.
@@ -80,7 +80,6 @@ wget http://ftp.ru.debian.org/debian/pool/main/g/gcc-4.9/libgomp1_4.9.2-10_amd64
 dpkg -i libgomp1_4.9.2-10_amd64.deb
 rm libgomp1_4.9.2-10_amd64.deb
 apt purge python2.7 python2.7-minimal libjpeg62-turbo
-rm /usr/bin/python
 ```
 
 #### Установка пакетов
@@ -98,7 +97,7 @@ mv -R mmogamelab/ mg/
 mkdir webdav
 chmod -R 777 /home/webdav
 chmod -R 777 /home/mg
-mv -R /home/mg/etcmetagam /etc/metagam
+mv /home/mg/etcmetagam /etc/metagam
 cd /home/mg
 make
 mv start ~/start
