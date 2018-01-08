@@ -109,7 +109,8 @@ chmod +x start reload
 Перед запуском стоит настроить пакеты для корректной работы конструктора
 #### nginx
 ```bash
-rm /etc/nginx/conf.d/default.conf
+rm /etc/nginx/sites-enabled/*
+rm /etc/nginx/conf.d/*.conf
 nano /etc/nginx/conf.d/default.conf
 ```
 Вставляем в пустой файл конфигурации следующее содержимое
