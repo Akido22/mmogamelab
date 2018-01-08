@@ -93,7 +93,7 @@ apt install memcached rsync psmisc python2.6 python-minimal concurrence python-t
 ```bash
 cd /home
 git clone https://github.com/chronosms/mmogamelab.git
-mv -R mmogamelab/ mg/
+mv mmogamelab/ mg/
 mkdir webdav
 chmod -R 777 /home/webdav
 chmod -R 777 /home/mg
