@@ -1,0 +1,3 @@
+export PYTHONPATH=/home/mg
+cd /home/mg
+./bin/mg_reload
